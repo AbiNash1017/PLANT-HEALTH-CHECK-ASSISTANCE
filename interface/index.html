@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Health Check Assistance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Nunito", sans-serif;
+            background-image: url(./2024-04-04_03-54-45_6532.png);
+            background-color: #1e1f1ceb;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-position: 70%;
+        }
+
+        .hero { 
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 60px;
+            text-align: center;
+        }
+
+        p {
+            color: rgb(226, 233, 237);
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        .btn {
+            
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #687D7A;
+            border: 1px solid azure;
+
+        }
+
+        #plink {
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #18181B
+        }
+
+        .bg {
+            margin: 15px;
+            padding: 8px;
+            background-color: #18181b55;
+            border-radius: 20px;
+        }
+
+        #quote {
+            color: rgb(226, 233, 237);
+            font-weight: 400;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="bg">
+            <h2>Welcom to plant Health Check Assistance</h2>
+            <p>“Cultivating Growth, Harvesting Wellness: Unearth the Power of Plants with Us!”</p>
+                <div id="quote"></div>
+            <button class="btn"><a id="plink" href="http://127.0.0.1:5000/" target="_blank">Health Check</a></button>
+        </div>
+    </div>
+    <script>
+        var quotes = [
+          "The glory of gardening: hands in the dirt, head in the sun, heart with nature.",
+          "To nurture a garden is to feed not just the body, but the soul.",
+          "Plant and your spouse plants with you; weed and you weed alone.",
+          "The love of gardening is a seed once sown that never dies."
+        ];
+        
+        function displayQuote() {
+          var index = Math.floor(Math.random() * quotes.length);
+          document.getElementById("quote").innerHTML = quotes[index];
+        }
+        
+        // Display a quote every 10 seconds
+        setInterval(displayQuote, 10000);
+        </script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/ad90a288-6c83-48b1-9039-fffb4f33fabb/webchat/config.js" defer></script>
+</body>
+
+</html>

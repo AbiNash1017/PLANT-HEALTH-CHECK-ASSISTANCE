@@ -1,0 +1,17 @@
+pip install matplotlib
+
+pip install seaborn
+
+pip install pillow 
+
+ pip install keras
+
+pip install tensorflow
+
+pip install scipy
+
+pip install opencv-python
+
+pip install flask
+
+pip install scikit-image
